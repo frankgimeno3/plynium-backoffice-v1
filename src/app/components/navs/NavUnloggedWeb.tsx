@@ -31,12 +31,13 @@ const NavUnlogggedWeb: FC<NavUnoggedWebProps> = ({ pestanaSelected, setPestanaSe
       </div>
       <div className='flex flex-row bg-gray-200 bg-opacity-5 pl-24 pl-24 text-lg mt-1 '>
         <p className={`p-4 mr-4 hover:bg-opacity-50 hover:bg-gray-200 pb-1 ${pestanaSelected === 'home' ? 'bg-gray-100 bg-opacity-10' : ''}`}
-        onClick={()=>cambiarpestana("home")}>Home</p>
+          onClick={() => cambiarpestana("home")}>Home</p>
         <p className={`p-4 mr-4 hover:bg-opacity-50 hover:bg-gray-200 ${pestanaSelected === 'publish' ? 'bg-gray-100 bg-opacity-10' : ''}`}
-        onClick={()=>cambiarpestana("publish")}>Publicar</p>
-                <p className={`p-4 mr-4 hover:bg-opacity-50 hover:bg-gray-200 ${pestanaSelected === 'news' ? 'bg-gray-100 bg-opacity-10' : ''}`}
-        onClick={()=>cambiarpestana("news")}>Noticias</p>
-         
+          onClick={() => cambiarpestana("publish")}>Publicar</p>
+        <p className={`p-4 mr-4 hover:bg-opacity-50 hover:bg-gray-200 ${pestanaSelected === 'news' ? 'bg-gray-100 bg-opacity-10' : ''}`}
+          onClick={() => cambiarpestana("news")}>Noticias</p>
+        <p className={`p-4 mr-4 hover:bg-opacity-50 hover:bg-gray-200 ${pestanaSelected === 'users' ? 'bg-gray-100 bg-opacity-10' : ''}`}
+          onClick={() => cambiarpestana("users")}>Users</p>
 
       </div>
 
